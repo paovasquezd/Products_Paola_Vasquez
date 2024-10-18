@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "34ba7424-98fd-4370-b66a-fbd9a4448087",
+		"name": "Tienda",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18726776"
+	},
+	"item": [
+		{
+			"name": "Consulta_ProdXCat",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fakestoreapi.com/products/category/electronics",
+					"protocol": "https",
+					"host": [
+						"fakestoreapi",
+						"com"
+					],
+					"path": [
+						"products",
+						"category",
+						"electronics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta_Categoria",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fakestoreapi.com/products/categories",
+					"protocol": "https",
+					"host": [
+						"fakestoreapi",
+						"com"
+					],
+					"path": [
+						"products",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta ProdXID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fakestoreapi.com/products/14",
+					"protocol": "https",
+					"host": [
+						"fakestoreapi",
+						"com"
+					],
+					"path": [
+						"products",
+						"14"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Prod",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Nuevo Producto SIM\",\r\n\"price\":\"550.000\",\r\n\"category\":\"electronics\",\r\n\"description\":\"memoria sim para uso coorporativo\",\r\n\"image\":\"https://t2.uc.ltmcdn.com/es/posts/7/1/7/como_cambiar_una_tarjeta_sim_17717_600.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fakestoreapi.com/products",
+					"protocol": "https",
+					"host": [
+						"fakestoreapi",
+						"com"
+					],
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Prod",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"title\":\"Nuevo Producto SIM\",\r\n\"price\":\"550.000\",\r\n\"category\":\"electronics\",\r\n\"description\":\"memoria sim para uso coorporativo\",\r\n\"image\":\"https://sumamovil.com.co/wp-content/uploads/2021/07/suma_blog-que-es-sim.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fakestoreapi.com/products/14",
+					"protocol": "https",
+					"host": [
+						"fakestoreapi",
+						"com"
+					],
+					"path": [
+						"products",
+						"14"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta Prod",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fakestoreapi.com/products/",
+					"protocol": "https",
+					"host": [
+						"fakestoreapi",
+						"com"
+					],
+					"path": [
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Prod",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://fakestoreapi.com/products/14",
+					"protocol": "https",
+					"host": [
+						"fakestoreapi",
+						"com"
+					],
+					"path": [
+						"products",
+						"14"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
